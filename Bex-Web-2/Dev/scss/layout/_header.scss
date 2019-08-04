@@ -2,17 +2,19 @@
     Header
 ============= */
 header {
-    background-color: $headerbg;
-    color: $white;
-    display: grid;
-    grid-template-columns: 20% auto;
-    height: 70px;
+    //padding: 10px;
+    position: fixed;
+    width: 100%;
+    
+    //cant do padding up here bc width 100%
+    background-color: $black;
+    z-index:500;
+    // nav {
+    //     i {
+    //         font-size: rem-calc(30);
+    //         margin-top: 8px;
+    //     }
+    // }
 
-    nav {
-        padding: 15px;
 
-        i {
-            font-size: rem-calc(40);
-        }
-    }
 }

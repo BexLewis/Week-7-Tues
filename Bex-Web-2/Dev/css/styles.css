@@ -445,19 +445,63 @@ textarea {
 /* =============
     Navigation
 ============= */
+a:hover,
+a:link {
+  text-decoration: none;
+  transition: 0.25s; }
+
+#off-canvas-container {
+  /* -------------
+        Here are the properties you can changes for the off-canvas navigation-slide
+    ------------- */
+  background-color: #000;
+  width: 350px;
+  /* close btn */
+  /* close btn */ }
+  #off-canvas-container button {
+    background-color: transparent;
+    border: none;
+    color: #D97200;
+    cursor: pointer;
+    font-size: 1.5625rem;
+    margin-bottom: 20px;
+    transition: 0.25s;
+    display: flex;
+    margin-left: auto; }
+  #off-canvas-container button:hover {
+    color: #fff; }
+  #off-canvas-container ul li {
+    border-bottom: 1px solid #D97200;
+    text-align: right; }
+    #off-canvas-container ul li a:link,
+    #off-canvas-container ul li a:visited {
+      color: #fff;
+      padding: 20px;
+      display: inline-block; }
+    #off-canvas-container ul li a:active,
+    #off-canvas-container ul li a:hover {
+      color: #D97200; }
+  #off-canvas-container ul li:last-child {
+    border: none; }
+
+#burger-icon {
+  background-color: #fff;
+  border: none;
+  font-size: 1.5625rem;
+  outline: none;
+  transition: 0.25s; }
+
+#burger-icon:hover {
+  color: #D97200; }
+
 /* =============
     Header
 ============= */
 header {
-  background-color: #72B107;
-  color: #fff;
-  display: grid;
-  grid-template-columns: 20% auto;
-  height: 70px; }
-  header nav {
-    padding: 15px; }
-    header nav i {
-      font-size: 2.5rem; }
+  position: fixed;
+  width: 100%;
+  background-color: #000;
+  z-index: 500; }
 
 /* =============
     Footer
