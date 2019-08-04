@@ -1,0 +1,18 @@
+/* =============
+    Header
+============= */
+header {
+    background-color: $headerbg;
+    color: $white;
+    display: grid;
+    grid-template-columns: 20% auto;
+    height: 70px;
+
+    nav {
+        padding: 15px;
+
+        i {
+            font-size: rem-calc(40);
+        }
+    }
+}
