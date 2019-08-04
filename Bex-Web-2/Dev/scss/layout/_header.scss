@@ -1,20 +1,14 @@
 /* =============
     Header
 ============= */
-header {
-    //padding: 10px;
-    position: fixed;
+header{
+    background-color: $headerbg;
     width: 100%;
-    
-    //cant do padding up here bc width 100%
-    background-color: $black;
-    z-index:500;
-    // nav {
-    //     i {
-    //         font-size: rem-calc(30);
-    //         margin-top: 8px;
-    //     }
-    // }
-
-
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    >div{
+        padding: 10px;
+    }
 }

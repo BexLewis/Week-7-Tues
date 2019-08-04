@@ -1,70 +1,65 @@
 /* =============
     Navigation
 ============= */
-
 a:hover,
 a:link {
     text-decoration: none;
     transition: 0.25s;
 }
 
+
 #off-canvas-container{
     /* -------------
         Here are the properties you can changes for the off-canvas navigation-slide
     ------------- */
 
-    background-color: $black;
+    // background-color: $black;
     // grid-template-columns: 10px auto 10px;
     // padding-top: 20px;
 
     // width of the off canvas navigation
-    width: 350px;
+    // width: 200px;
+
 
     /* close btn */
     button {
         background-color: transparent;
         border: none;
-        color: $orange;
+        color: $white;
         cursor: pointer;
         font-size: rem-calc(25);
         margin-bottom: 20px;
-        //text-align: right;
-
+        text-align: right;
         transition: 0.25s;
-        //width: 100%;
-        display: flex;
-        margin-left: auto;
-        }
+        width: 100%;
+    }
 
     /* close btn */
     button:hover {
-        color: $white;
+        color: $orange;
     }
 
     ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         li {
+            font-family: 'Heebo', sans-serif;
+            font-weight: bold;
+            font-size: rem-calc(20);
 
-            border-bottom: 1px solid $orange;
-            text-align: right;
-            //margin-bottom: 20px;
+            margin-bottom: 20px;
             a:link,
             a:visited {
                 color: #fff;
-                padding: 20px;
-
-                display: inline-block;
-                //DISPLAY INLINE BLOCK
             }
 
             a:active,
             a:hover {
                 color: $orange;
-
+                border-bottom: 2px solid $orange;
             }
-        }
-
-        li:last-child{
-            border:none;
         }
     }
 }
@@ -73,10 +68,9 @@ a:link {
 #burger-icon {
     background-color: $white;
     border: none;
-    font-size: rem-calc(25);
+    font-size: rem-calc(18);
     outline: none;
-    transition: 0.25s;
-    //padding: 8px;
+    padding: 8px;
     // position: fixed;
     // right: 20px;
     // top: 20px;
@@ -84,6 +78,6 @@ a:link {
 }
 
 #burger-icon:hover {
-
-    color: $orange;
+    background-color: $black;
+    color: $white;
 }

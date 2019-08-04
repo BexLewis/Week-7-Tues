@@ -14,38 +14,46 @@
 </head>
 
 <body>
+
     <!-- Your options for data-navigation-position is: left | right -->
-<!-- Your options for data-navigation-slide is: over | under | push -->
-<section id="off-canvas-container" data-navigation-position="left" data-navigation-slide="push">
-    <div>
-        <button>
-            <i class="far fa-times-circle" id="close-btn"></i>
-        </button>
-        <div id="nav-container">
-            <nav data-nav="main-navigation">
+    <!-- Your options for data-navigation-slide is: over | under | push -->
+    <section id="off-canvas-container" data-navigation-position="left" data-navigation-slide="push">
+        <div>
+            <button>
+                <i class="far fa-times-circle" id="close-btn"></i>
+            </button>
+            <div id="nav-container">
+                <nav data-nav="main-navigation">
 
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+                    <ul>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">HOUSING</a></li>
+                        <li><a href="#">HABITAT</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<header data-fixed="fixed-item">
 
-        <section id="burger-icon">
-            <i class="fas fa-bars"></i>
-        </section>
+    <!-- burger icon -->
+    <!-- The burger icon needs to be outside of the main tag if you are going to position fix it. -->
+    <button id="burger-icon" data-fixed="fixed-item">
+        <i class="fas fa-bars"></i>
+    </button>
 
-</header>
+    <!--
+    *************** Your website content goes here! ***************
+    -->
+    <main>
 
-<main>
-    <!-- overlay for the view when the menu is visible. Please don't move -->
+        <!-- overlay for the view when the menu is visible. Please don't move -->
         <div class="js-off-canvas-overlay" id="overlay"></div>
         <!-- overlay for the view when the menu is visible. Please don't move -->
+
+        <!-- Your Content -->
 
     <section id="hero-1">
         <section class="title">
